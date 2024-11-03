@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEROTEC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* CSS proporcionado */
+
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-image: url('plane.jpg'); /* Ruta de tu imagen */
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Title and Headings */
+        h1, h2 {
+            color: white;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        /* Container */
+        .container {
+            font-family: 'Poppins', sans-serif;
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(2px);
+        }
+
+        /* Input Group Styles */
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            color: #ccc;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        /* Button Styles */
+        .button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn-save, .btn-back {
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+            color: #fff;
+        }
+
+        .btn-save {
+            background-color: #00c4ff;
+        }
+
+        .btn-back {
+            background-color: #333;
+        }
+
+        /* Header */
+        .header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 15px;
+            background-color: #000;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* Title Inside Container */
+        .title {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">AEROTEC</div>
+
+    <div class="container">
+        <div class="title">Ingresa los datos de tu tarjeta</div>
+
+        <div class="input-group">
+            <label for="card-number">Número de tarjeta</label>
+            <input type="text" id="card-number" placeholder="Ingresa el número aquí">
+        </div>
+
+        <div class="input-group">
+            <label for="expiration">Vigencia</label>
+            <input type="text" id="expiration" placeholder="MM/AA">
+        </div>
+
+        <div class="input-group">
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" placeholder="Ingresa el CVV">
+        </div>
+
+        <div class="button">
+            <button class="btn-save">Guardar</button>
+            <button class="btn-back">Atrás</button>
+        </div>
+    </div>
+
+</body>
+</html>
